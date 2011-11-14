@@ -26,6 +26,8 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'webrat'
+  gem 'spork'
+  gem 'win32-process'
 end
 
 # To use ActiveModel has_secure_password
