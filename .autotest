@@ -1,0 +1,15 @@
+# ~.autotest
+require 'rubygems'
+SPEAKING = false
+DOOM_EDITION = false
+BUUF = false
+PENDING = false
+STICKY = false
+SUCCESS_SOUND = ''
+FAILURE_SOUND = ''
+
+Autotest.add_hook :initialize do |autotest|
+  autotest.add_mapping(/^spec\/requests\/.*_spec\.rb$/) do
+    autotest.files_matching(/^spec\/requests\/.*_spec\.rb$/)
+  end
+end
